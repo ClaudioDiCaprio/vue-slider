@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <div class="container">
+            <div class="images">
+                <img :src="images[currentImg]" alt="">
+            </div>
+            <div class="thumbs">
+                <i class = "fas fa-arrow-alt-circle-up nav-prev" @click="prevImg()"></i>
+                <div class="thumb" v-for="(image, i) in images" :class=" i == currentImg ? 'active' : '' "  >
+                    <img :src="image" alt="">
+                </div>
+                <i class = "fas fa-arrow-alt-circle-down nav-next" @click="nextImage()"></i>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
