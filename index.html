@@ -11,13 +11,19 @@
 <body>
     <div id="root">
         <div class="container">
-            <div class="images">
-                <img :src="images[currentImg]" alt="">
+            <div class="images" >
+                <img :src="images[currentImg].src" alt="">
+                <div>
+                    <h2 class="place">{{images[currentImg].place}}</h2>
+                    <p class="quote">{{images[currentImg].quote}}</p>
+                </div>
+                
             </div>
             <div class="thumbs">
                 <i class = "fas fa-arrow-alt-circle-up nav-prev" @click="prevImg()"></i>
                 <div class="thumb" v-for="(image, i) in images" :class=" i == currentImg ? 'active' : '' "  >
-                    <img :src="image" alt="">
+                    <img :src="image.src" alt="">
+                   
                 </div>
                 <i class = "fas fa-arrow-alt-circle-down nav-next" @click="nextImage()"></i>
             </div>

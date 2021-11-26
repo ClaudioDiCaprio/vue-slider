@@ -2,11 +2,37 @@ const app = new Vue({
     el:'#root',
     data: {
         images:[
-            " img/01.jpg",
-            " img/02.jpg",
-            " img/03.jpg",
-            " img/04.jpg",
-            " img/05.jpg",
+            {   
+                "place":'Svezia',
+                "quote":'Vieni a goderti quel po\' di tempo libero che ti rimane in un paradiso ',
+                "src":" img/01.jpg",
+            },
+            
+            {   
+                "place":'Svizzera',
+                "quote":'Vieni a goderti quel po\' di tempo libero che ti rimane in un paradiso ',
+                "src":" img/02.jpg",
+            },
+
+            {   
+                "place":'Gran Bretagna',
+                "quote":'Vieni a goderti quel po\' di tempo libero che ti rimane in un paradiso ',
+                "src":" img/03.jpg",
+            },
+
+            {   
+                "place":'Germania',
+                "quote":'Vieni a goderti quel po\' di tempo libero che ti rimane in un paradiso ',
+                "src":" img/04.jpg",
+            },
+
+            {   
+                'place':'Paradise',
+                'quote':'Vieni a goderti quel po\' di tempo libero che ti rimane in un paradiso ',
+                'src':" img/05.jpg",
+            },
+
+        
         ],
         currentImg:0
     },

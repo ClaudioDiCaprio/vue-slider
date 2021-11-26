@@ -1,3 +1,9 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 #root{
     display: flex;
     height: 100vh;
@@ -22,7 +28,7 @@
     transform: translateX(-50%);
     z-index: 1;
     font-size: 30px;
-    color: rgb(187, 255, 255);
+    color: rgb(218, 255, 255);
     cursor: pointer;
 }
 
@@ -48,4 +54,18 @@
 
 .thumb.active{
     filter: none;
+}
+
+.place{
+    color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 115px;
+    left: 620px;
+
+}
+.quote{
+    color: white;
+    position: relative;
+    bottom: 90px;
+    left: 300px;
 }
