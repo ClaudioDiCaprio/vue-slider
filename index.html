@@ -21,8 +21,8 @@
             </div>
             <div class="thumbs">
                 <i class = "fas fa-arrow-alt-circle-up nav-prev" @click="prevImg()"></i>
-                <div class="thumb" v-for="(image, i) in images" :class=" i == currentImg ? 'active' : '' "  >
-                    <img :src="image.src" alt="">
+                <div class="thumb" v-for="(image, i) in images" :class=" i == currentImg ? 'active' : '' " @click="selectImg(i)" >
+                    <img :src="image.src" alt="image.alt">
                    
                 </div>
                 <i class = "fas fa-arrow-alt-circle-down nav-next" @click="nextImage()"></i>
